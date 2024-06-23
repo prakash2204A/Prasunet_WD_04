@@ -1,0 +1,210 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.branding h1 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.branding p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffa500;
+}
+
+/* Content Styles */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Adjusted to column for vertical alignment */
+    padding: 20px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure image doesn't overflow */
+}
+
+.portfolio-image {
+    width: 50%; /* Adjust image width as needed */
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.text-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px;
+}
+
+/* Buttons Section Styles */
+.buttons-section {
+    text-align: center;
+    margin-top: 20px; /* Adjust top margin to create space */
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #837f78;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffa500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 10px;
+    }
+    
+    .image-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-image {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .buttons-section {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .btn {
+        width: 100px;
+        height: 100px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 80px;
+        height: 80px;
+        font-size: 0.8rem;
+    }
+}
