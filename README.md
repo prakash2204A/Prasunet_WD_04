@@ -28,7 +28,7 @@ This is my personal portfolio website where you can find information about me, v
 - HTML
 - CSS
 - JavaScript
-- [Additional technologies like React, Node.js, etc., if used]
+
 
 ## Getting Started
 
